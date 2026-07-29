@@ -175,10 +175,11 @@ st.header("🏆 Leaderboard")
 html = "<div style='max-width: 1100px;'>"
 html += "<table style='width: 100%; border-collapse: collapse; text-align: left;'>"
 html += "<tr style='border-bottom: 2px solid #ddd;'>"
-html += "<th>Manager</th><th>Team</th><th style='text-align: right; width: 150px;'>Points</th><th style='text-align: right; width: 150px;'>Points (unweighted)</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th>"
+html += "<th style='text-align: center; width: 60px;'>Rank</th><th>Manager</th><th>Team</th><th style='text-align: right; width: 150px;'>Points</th><th style='text-align: right; width: 150px;'>Points (unweighted)</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th>"
 html += "</tr>"
-for r in leaderboard:
+for i, r in enumerate(leaderboard, start=1):
     html += "<tr style='border-bottom: 1px solid #eee;'>"
+    html += f"<td style='padding: 8px; text-align: center;'><b>{i}</b></td>"
     html += f"<td style='padding: 8px;'>{r['Manager']}</td>"
     html += f"<td style='padding: 8px;'><b>{r['Team']}</b></td>"
     html += f"<td style='padding: 8px; text-align: right;'><b>{r['Points']:,}</b></td>"

@@ -1,0 +1,242 @@
+{
+  "Husuttaja": {
+    "manager": "Atte",
+    "pots": {
+      "1": [
+        {
+          "name": "John Higgins",
+          "start": null,
+          "end": null
+        }
+      ],
+      "2": [
+        {
+          "name": "Barry Hawkins",
+          "start": null,
+          "end": null
+        }
+      ],
+      "3": [
+        {
+          "name": "Zhou Yuelong",
+          "start": null,
+          "end": null
+        }
+      ],
+      "4": [
+        {
+          "name": "Noppon Saengkham",
+          "start": null,
+          "end": null
+        }
+      ],
+      "5": [
+        {
+          "name": "Liam Highfield",
+          "start": null,
+          "end": null
+        }
+      ]
+    }
+  },
+  "Mutsisstrutsi": {
+    "manager": "Topi",
+    "pots": {
+      "1": [
+        {
+          "name": "John Higgins",
+          "start": null,
+          "end": null
+        }
+      ],
+      "2": [
+        {
+          "name": "Mark Selby",
+          "start": null,
+          "end": null
+        }
+      ],
+      "3": [
+        {
+          "name": "Hossein Vafaei",
+          "start": null,
+          "end": null
+        }
+      ],
+      "4": [
+        {
+          "name": "Jackson Page",
+          "start": null,
+          "end": null
+        }
+      ],
+      "5": [
+        {
+          "name": "Artemijs Zizins",
+          "start": null,
+          "end": null
+        }
+      ]
+    }
+  },
+  "Aki Kauppinen all stars": {
+    "manager": "Tuomas",
+    "pots": {
+      "1": [
+        {
+          "name": "Shaun Murphy",
+          "start": null,
+          "end": null
+        }
+      ],
+      "2": [
+        {
+          "name": "Mark Selby",
+          "start": null,
+          "end": null
+        }
+      ],
+      "3": [
+        {
+          "name": "Zhou Yuelong",
+          "start": null,
+          "end": null
+        }
+      ],
+      "4": [
+        {
+          "name": "Chang Bingyu",
+          "start": null,
+          "end": null
+        }
+      ],
+      "5": [
+        {
+          "name": "Sam Craigie",
+          "start": null,
+          "end": null
+        }
+      ]
+    }
+  },
+  "Finger-Waggers": {
+    "manager": "Otto",
+    "pots": {
+      "1": [
+        {
+          "name": "Wu Yize",
+          "start": null,
+          "end": null
+        }
+      ],
+      "2": [
+        {
+          "name": "Mark Allen",
+          "start": null,
+          "end": null
+        }
+      ],
+      "3": [
+        {
+          "name": "Hossein Vafaei",
+          "start": null,
+          "end": null
+        }
+      ],
+      "4": [
+        {
+          "name": "Stan Moody",
+          "start": null,
+          "end": null
+        }
+      ],
+      "5": [
+        {
+          "name": "Liam Highfield",
+          "start": null,
+          "end": null
+        }
+      ]
+    }
+  },
+  "Voi Jotta": {
+    "manager": "Seppo",
+    "pots": {
+      "1": [
+        {
+          "name": "Judd Trump",
+          "start": null,
+          "end": null
+        }
+      ],
+      "2": [
+        {
+          "name": "Mark Selby",
+          "start": null,
+          "end": null
+        }
+      ],
+      "3": [
+        {
+          "name": "Gary Wilson",
+          "start": null,
+          "end": null
+        }
+      ],
+      "4": [
+        {
+          "name": "Chang Bingyu",
+          "start": null,
+          "end": null
+        }
+      ],
+      "5": [
+        {
+          "name": "Liam Highfield",
+          "start": null,
+          "end": null
+        }
+      ]
+    }
+  },
+  "Team Mikko": {
+    "manager": "Mikko",
+    "pots": {
+      "1": [
+        {
+          "name": "Judd Trump",
+          "start": null,
+          "end": null
+        }
+      ],
+      "2": [
+        {
+          "name": "Mark Williams",
+          "start": null,
+          "end": null
+        }
+      ],
+      "3": [
+        {
+          "name": "Pang Junxu",
+          "start": null,
+          "end": null
+        }
+      ],
+      "4": [
+        {
+          "name": "Luca Brecel",
+          "start": null,
+          "end": null
+        }
+      ],
+      "5": [
+        {
+          "name": "Jimmy White",
+          "start": null,
+          "end": null
+        }
+      ]
+    }
+  }
+}

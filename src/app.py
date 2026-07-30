@@ -221,4 +221,11 @@ st.markdown(html, unsafe_allow_html=True)
 
 st.header("📈 Progress")
 if chart_data:
-    st.line_chart(chart_data, x="Date")
+    managers = [team_data.get("manager", team) for team, team_data in teams.items()]
+    st.line_chart(
+        chart_data,
+        x="Date",
+        y=managers,
+        use_container_width=True,
+        y_label="Points",
+    )

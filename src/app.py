@@ -202,13 +202,22 @@ html += "<table style='width: 100%; border-collapse: collapse; text-align: left;
 html += "<tr style='border-bottom: 2px solid #ddd;'>"
 html += "<th style='text-align: center; width: 60px;'>Rank</th><th>Manager</th><th>Team</th><th style='text-align: right; width: 150px;'>Points</th><th style='text-align: right; width: 150px;'>Points (unweighted)</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th>"
 html += "</tr>"
+
+participants_count = len(leaderboard)
+prize_label = "💰 +{} €".format((participants_count - 1) * 50)
+
 for i, r in enumerate(leaderboard, start=1):
     html += "<tr style='border-bottom: 1px solid #eee;'>"
-    html += f"<td style='padding: 8px; text-align: center;'><b>{i}</b></td>"
+    if i == 1:
+        html += f"<td style='padding: 8px; text-align: center;'><b>{i}</b><br><span style='font-size: 0.85em; white-space: nowrap;'>{prize_label}</span></td>"
+    else:
+        html += f"<td style='padding: 8px; text-align: center;'><b>{i}</b></td>"
     html += f"<td style='padding: 8px;'>{r['Manager']}</td>"
     html += f"<td style='padding: 8px;'><b>{r['Team']}</b></td>"
     html += f"<td style='padding: 8px; text-align: right;'><b>{r['Points']:,}</b></td>"
-    html += f"<td style='padding: 8px; text-align: right;'>{r['PointsUnweighted']:,}</td>"
+    html += (
+        f"<td style='padding: 8px; text-align: right;'>{r['PointsUnweighted']:,}</td>"
+    )
     html += f"<td style='padding: 8px;'>{r['P1']}</td>"
     html += f"<td style='padding: 8px;'>{r['P2']}</td>"
     html += f"<td style='padding: 8px;'>{r['P3']}</td>"

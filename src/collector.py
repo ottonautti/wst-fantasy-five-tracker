@@ -85,7 +85,7 @@ def main():
     row_count = 0
     file_exists = os.path.exists(history_file)
     with open(history_file, 'a', newline='') as csvfile:
-        writer = csv.writer(csvfile)
+        writer = csv.writer(csvfile, lineterminator='\n')
         if not file_exists:
             writer.writerow(['Date', 'PlayerID', 'Points', 'CLPoints'])
 

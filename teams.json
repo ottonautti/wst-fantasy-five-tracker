@@ -238,5 +238,45 @@
         }
       ]
     }
+  },
+  "Deep screw": {
+    "manager": "Kalle",
+    "pots": {
+      "1": [
+        {
+          "name": "Zhao Xintong",
+          "start": null,
+          "end": null
+        }
+      ],
+      "2": [
+        {
+          "name": "Kyren Wilson",
+          "start": null,
+          "end": null
+        }
+      ],
+      "3": [
+        {
+          "name": "Ali Carter",
+          "start": null,
+          "end": null
+        }
+      ],
+      "4": [
+        {
+          "name": "Chang Bingyu",
+          "start": null,
+          "end": null
+        }
+      ],
+      "5": [
+        {
+          "name": "Liam Pullen",
+          "start": null,
+          "end": null
+        }
+      ]
+    }
   }
 }

@@ -12,6 +12,11 @@ st.set_page_config(page_title="WST Fantasy Five Tracker", layout="wide")
 POT_WEIGHTS = {"1": 1.0, "2": 1.0, "3": 3.0, "4": 4.0, "5": 5.0}
 
 
+def get_player_page(id):
+    """Returns snooker.org player page URL for a given player ID."""
+    return f"https://www.snooker.org/res/index.asp?player={id}"
+
+
 @st.cache_data(ttl=3600)
 def load_data():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -218,11 +223,16 @@ for i, r in enumerate(leaderboard, start=1):
     html += (
         f"<td style='padding: 8px; text-align: right;'>{r['PointsUnweighted']:,}</td>"
     )
-    html += f"<td style='padding: 8px;'>{r['P1']}</td>"
-    html += f"<td style='padding: 8px;'>{r['P2']}</td>"
-    html += f"<td style='padding: 8px;'>{r['P3']}</td>"
-    html += f"<td style='padding: 8px;'>{r['P4']}</td>"
-    html += f"<td style='padding: 8px;'>{r['P5']}</td>"
+
+
+    for pot in ["P1", "P2", "P3", "P4", "P5"]:
+        player_name = r[pot]
+        player_id = mapping.get(player_name, "")
+        if player_id:
+            html += f"<td style='padding: 8px;'><a href='{get_player_page(player_id)}' target='_blank'>{player_name}</a></td>"
+        else:
+            html += f"<td style='padding: 8px;'>{player_name}</td>"
+
     html += "</tr>"
 html += "</table></div><br>"
 

@@ -2,7 +2,7 @@ name: Generate Daily Fantasy Points
 
 on:
   schedule:
-    - cron: '0 8 * * 1' # Runs at 8:00 AM UTC every Monday
+    - cron: '0 2 * * 1' # Runs at 2:00 AM UTC every Monday
   workflow_dispatch: # Allows you to run it manually from the GitHub UI
 
 jobs:
